@@ -31,7 +31,8 @@ author 				:Alexander Steel
 date				:2017-07-15 14:31:34 -0400
 version 			:v0.1
 usage				:python Adlumin.py
-notes				:Update
+begin				:Start Submission Time: 2017-07-14 20:31:42 -0400
+notes				:Final Submission Time: 2017-07-15 17:20:19 -0400
 python_version :2.7.6
 """
 print(login)
