@@ -6,6 +6,8 @@
 #Final Timestamp for Work on Friday: 2017-07-14 23:03:13 -0400
 #$ mv C:/Jobs/Adlumin.py C:/
 #$ mv C:/Adlumin.py C:/Jobs
+#Moved Main into C: Updated with CHMOD
+#Backup File Loc 1 and 2 Confirmed: 2017-07-15 14:56:33 -0400
 login='''
                                                                           
  ad88888ba  88                     88 88    88888888ba             88 88  

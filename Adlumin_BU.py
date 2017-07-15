@@ -9,7 +9,7 @@
 #Backup Counter:
 #Warmup Checking In 2017-07-15 12:56:52 -0400
 #b[0]: 2017-07-15 13:42:45 -0400
-#b[1]: 
+#b[1]: 2017-07-15 14:56:33 -0400 (Formatting and New Backup)
 ###############
 #$ mv C:/Jobs/Adlumin.py C:/
 #$ mv C:/Adlumin.py C:/Jobs
