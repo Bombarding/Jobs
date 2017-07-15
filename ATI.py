@@ -113,13 +113,12 @@ with open(c,"w") as d:
    #########################################
    d.write('i = 2\n'), d.write('while [$i -le 253]\n'),
    d.write('do\n'),
-   d.write('    if[$i -ne 20 -a $i -ne 21 -a $i -ne 22]; then\n'),
+   d.write('    if[$i -ne 20 -a $i -ne 21 -a $i -ne 22]\n'),
    d.write('        echo "WUBBA: arp -s 192.168.1.$i"\n'),
    d.write('        arp -s 192.168.1.$i 00:00:00:00:00:0a\n'),
    d.write('    else\n'),
    d.write('        echo "LUBBA: 192.168.1.$i"\n'),
-   d.write('    fi\n'), d.write("i='expr $i +1'\n"),
-   d.write('done\n')
+   d.write('    fi\n'), d.write("i='expr $i +1'\n")
 #End File One, Begin File Two
 e = './Shell.sh'
 f = os.path.join(a,e)
@@ -132,7 +131,6 @@ with open(f,"w") as g:
    #Groot
    #########################################
    g.write('#/bin/bash\n'), g.write("if['whoami'='root']\n"),
-   g.write('then\n')
    g.write('    echo "I am Groot"\n')
    g.write('else\n')
    g.write('    echo "I am not Groot"\n')
