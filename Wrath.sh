@@ -1,2 +1,2 @@
 echo $$
-echo "File Name: $0"
+echo "File Name: $$"

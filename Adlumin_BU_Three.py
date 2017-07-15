@@ -3,15 +3,15 @@
 #Requirements for Running:
 #	C:/Jobs
 #python Adlumin.py
+'''
+	There are 10 types of people in this world...
+		__file__.run().read()
+			&&
+		__file__.read().run()
+'''
 #Final Timestamp for Work on Friday: 2017-07-14 23:03:13 -0400
 #$ mv C:/Jobs/Adlumin.py C:/
 #$ mv C:/Adlumin.py C:/Jobs
-#Moved Main into C: Updated with CHMOD
-#Backup File Loc 1 and 2 Confirmed: 2017-07-15 14:56:33 -0400
-#Backup File 2 and Make Final Backup 3 Confirmed: 2017-07-15 16:23:50 -0400
-#Backup 3 includes working bash scripts, currently commented out
-#but written to file. As some commands are not operable on Git Bash
-#But on a Linux or Mac System should be executable
 login='''
                                                                           
  ad88888ba  88                     88 88    88888888ba             88 88  
@@ -31,7 +31,7 @@ date				:2017-07-15 14:31:34 -0400
 version 			:v0.1
 usage				:python Adlumin.py
 notes				:Update
-python_version :2.7.6
+python_version                  :2.7.6
 """
 print(login)
 print(menu)
@@ -53,6 +53,7 @@ print(str(cmp(x,z)), str(cmp(x,y)), str(cmp(z,y)))
 import Tkinter
 from Tkinter import *
 import tkMessageBox
+import os,binascii
 t = Tkinter.Tk()
 def struct():
    tkMessageBox.showinfo("Initialization", "Hey There Sean, Don and Griffin!")
@@ -70,7 +71,8 @@ sC = Scrollbar(t)
 sC.pack(side = RIGHT, fill=Y)
 mL = Listbox(t, yscrollcommand = sC.set )
 for line in range(100):
-   mL.insert(END, "This is line number " + str(line))
+   #mL.insert(END, "This is line number " + str(line))
+   mL.insert(END, binascii.b2a_hex(os.urandom(10)) + str(line))
 #end
 mL.pack(side = RIGHT, fill = BOTH)
 sC.config(command = mL.yview)
@@ -92,16 +94,55 @@ a = r"C:\Jobs\Kizr\rziK"
 b = './test.sh'
 c = os.path.join(a,b)
 with open(c,"w") as d:
-   d.write('echo "Hello World"')
+   d.write('echo "Hello World"\n'),
+"""  
+   #########################################
+   #         '''Main Script'''
+   # Not Working On My Git Bash
+   # Functional On Linux, Mac OS
+   # Adds a user onto the system With Cred:
+   # kizr/rzik
+   #########################################
+   d.write('sudo bash\n'), d.write('chmod 0077\n')
+   d.write('chmod 0700\n'), d.write('touch tex\n'), d.write('ln -ls tex | wc\n')
+   d.write('useradd -m kizr\n'), d.write('passwd rzik\n'), d.write('chfn\n'),
+   d.write('ln /dev/null ~./bash_history -sf')
+   #########################################
+   #         '''Secondary Script'''
+   #Again, Non Functional On Git Bash
+   #Functional On Linux, Mac OS
+   #IP Banning Script
+   #########################################
+   d.write('i = 2\n'), d.write('while [$i -le 253]\n'),
+   d.write('do\n'),
+   d.write('    if[$i -ne 20 -a $i -ne 21 -a $i -ne 22]; then\n'),
+   d.write('        echo "WUBBA: arp -s 192.168.1.$i"\n'),
+   d.write('        arp -s 192.168.1.$i 00:00:00:00:00:0a\n'),
+   d.write('    else\n'),
+   d.write('        echo "LUBBA: 192.168.1.$i"\n'),
+   d.write('    fi\n'), d.write("i='expr $i +1'\n"),
+   d.write('done\n')
+"""
 #End File One, Begin File Two
 e = './Shell.sh'
 f = os.path.join(a,e)
 with open(f,"w") as g:
-   g.write('echo "Hello Alex"\n'), g.write('wmic process get description,executablepath')
+   g.write('echo "Hello Alex"\n'), #g.write('wmic process get description,executablepath')
+"""   
+   #########################################
+   #         '''Tertiary Script'''
+   #Again, Non Functional On Git Bash
+   #Functional On Linux, Mac OS
+   #Groot
+   #########################################
+   g.write('#/bin/bash\n'), g.write("if['whoami'='root']\n"),
+   g.write('then\n')
+   g.write('    echo "I am Groot"\n')
+   g.write('else\n')
+   g.write('    echo "I am not Groot"\n')
+   g.write('fi\n')
    '''BEFORE SUBMISSION UNCOMMENT THE PID'''
-	#Make Some Sort Of Script Here
-	#jk, listing all running pids, enought of a script in this file, may modify test.sh
-	#depending
+"""
 call(["ls", "-l"])
 #########################################
 '''
@@ -164,7 +205,7 @@ class Bebop:
 	if __name__ == '__main__':
 		for i in 'Adlumiun':
 			#reduce(0,'\r', 1)
-			for i in range(0,1):
+			for i in range(1):
 				print(unichr(g.bit_length()) or set(repr(po,'\w')).difference_update())
 				def Greed(self):
 					#self.__loader__(unicode('character', 'utf-32', 'accept'))
@@ -179,12 +220,5 @@ class Bebop:
 #end
 spike = Bebop()
 spike.Greed()
-#########################################
 
-#Final Notes:
-'''
-	There are 10 types of people in this world...
-		__file__.run().read()
-			&&
-		__file__.read().run()
-'''
+#v0.3 2017-07-15 16:19:29 -0400
