@@ -3,7 +3,7 @@
 
 ```
 	Saturday Schenanigans Begin 12:45pm
-	Esitmated Completion Time ~6pm
+	Estimated Completion Time ~6pm
 	Offline
 	Break 1 Saturday && Update BU #2 With Reformatted Main
 	Main File Not Included. Main = Submission
@@ -39,4 +39,21 @@
 						return Accepted || return Fair.Val(to_s('sender'))
 				pVal enc:encode -*UTF-32*- or in int ~> hex conversion of said Variable
 		-Final Commit Time and Email Submission Time To Adlumin @ 2017-07-15 17:37:02 -0400
+```
+
+```
+###############
+#Backup Counter:
+#b[0]: 2017-07-14 20:31:42 -0400 (After first removal of original code)
+#b[1]: 2017-07-14 20:44:53 -0400 (Back to Original Context)
+#b[2]: 2017-07-14 21:09:07 -0400 (Currently Popup, Creates Folder, and Executes shell file within system [Requires C:/Jobs])
+#b[3]: 2017-07-14 21:28:05 -0400 (Progressing Further Official Break #1 & Backup)
+#b[4]: 2017-07-14 23:03:13 -0400 (Final Backup for the night before pushing to Git)
+#Saturday:
+#Backup Counter:
+#Warmup Checking In 2017-07-15 12:56:52 -0400
+#b[0]: 2017-07-15 13:42:45 -0400
+#b[1]: 2017-07-15 14:56:33 -0400 (Formatting and New Backup)
+#b[f]: Sat Jul 15 17:54:35 EDT 2017 (Finished! Backup Files Available Upon Request)
+###############
 ```
